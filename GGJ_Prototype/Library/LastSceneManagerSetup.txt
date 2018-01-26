@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Scenes/Test/MovementCameraTest.unity
+- path: Assets/Scenes/Test/MainMenu.unity
   isLoaded: 1
   isActive: 1
