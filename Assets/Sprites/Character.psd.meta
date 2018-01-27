@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: 7c3869f0bcabb9d47a92624b03b23aec
-timeCreated: 1517069005
+timeCreated: 1517085173
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
@@ -26,6 +26,14 @@ TextureImporter:
     21300038: Tree1
     21300040: Character_0
     21300042: Character_1
+    21300044: Rat Head
+    21300046: Rat Neck
+    21300048: Rat Torso
+    21300050: RatUpperHand
+    21300052: RatHand
+    21300054: RatUpperLeg
+    21300056: RatFoot
+    21300058: RatTail
   externalObjects: {}
   serializedVersion: 4
   mipmaps:
@@ -530,7 +538,7 @@ TextureImporter:
         width: 216
         height: 358
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline:
       - - {x: 55, y: 179}
@@ -568,7 +576,7 @@ TextureImporter:
         width: 267
         height: 360
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline:
       - - {x: -133.5, y: -148}
@@ -588,6 +596,118 @@ TextureImporter:
         - {x: 132.5, y: -176}
         - {x: 132.5, y: 69}
         - {x: 29.5, y: 180}
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Rat Head
+      rect:
+        serializedVersion: 2
+        x: 736
+        y: 618
+        width: 34
+        height: 23
+      alignment: 9
+      pivot: {x: 0.9476013, y: 0.46517545}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Rat Neck
+      rect:
+        serializedVersion: 2
+        x: 771
+        y: 618
+        width: 12
+        height: 19
+      alignment: 9
+      pivot: {x: 0.32201132, y: 0.5210796}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Rat Torso
+      rect:
+        serializedVersion: 2
+        x: 784
+        y: 615
+        width: 49
+        height: 28
+      alignment: 9
+      pivot: {x: 0.0967918, y: 0.47616142}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: RatUpperHand
+      rect:
+        serializedVersion: 2
+        x: 783
+        y: 605
+        width: 9
+        height: 8
+      alignment: 9
+      pivot: {x: 0.6334975, y: 0.7503052}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: RatHand
+      rect:
+        serializedVersion: 2
+        x: 770
+        y: 597
+        width: 12
+        height: 9
+      alignment: 9
+      pivot: {x: 0.93885803, y: 0.9626736}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: RatUpperLeg
+      rect:
+        serializedVersion: 2
+        x: 818
+        y: 600
+        width: 17
+        height: 14
+      alignment: 9
+      pivot: {x: 0.6727582, y: 0.9386248}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: RatFoot
+      rect:
+        serializedVersion: 2
+        x: 810
+        y: 582
+        width: 19
+        height: 15
+      alignment: 9
+      pivot: {x: 0.8867541, y: 0.96539307}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: RatTail
+      rect:
+        serializedVersion: 2
+        x: 844
+        y: 622
+        width: 26
+        height: 46
+      alignment: 9
+      pivot: {x: 0.1527217, y: 0.054373037}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
       physicsShape: []
       tessellationDetail: 0
     outline: []
