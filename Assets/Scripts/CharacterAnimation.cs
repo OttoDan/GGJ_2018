@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class CharacterAnimation : MonoBehaviour {
     Animator anim;
+    int jumpHash = Animator.StringToHash("jump");
 	// Use this for initialization
 	void Start () {
         anim = GetComponent<Animator>();
