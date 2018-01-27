@@ -14,5 +14,9 @@ public class CharacterAnimation : MonoBehaviour {
 	void Update () {
         float move = Input.GetAxis("Horizontal");
         anim.SetFloat("speed", move*1.0f);
+        if (Input.GetButtonDown("Jump"))
+        {
+            anim.SetTrigger(jumpHash);
+        }
 	}
 }
