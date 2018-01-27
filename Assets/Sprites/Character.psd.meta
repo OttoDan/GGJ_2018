@@ -1,0 +1,372 @@
+fileFormatVersion: 2
+guid: 7c3869f0bcabb9d47a92624b03b23aec
+timeCreated: 1517025684
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: Head
+    21300002: Torso
+    21300004: UpperArmL
+    21300006: UnderArmL
+    21300008: HandL
+    21300010: FistL
+    21300012: FootL
+    21300014: FootR
+    21300016: UnderLegL
+    21300018: UnderLegR
+    21300020: UpperLegL
+    21300022: UpperLegR
+    21300024: FistR
+    21300026: HandR
+    21300028: UnderArmR
+    21300030: UpperArmR
+    21300032: Pelvis
+  externalObjects: {}
+  serializedVersion: 4
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -1
+    wrapU: 1
+    wrapV: 1
+    wrapW: -1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - buildTarget: Windows Store Apps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Head
+      rect:
+        serializedVersion: 2
+        x: 121
+        y: 662
+        width: 46
+        height: 57
+      alignment: 9
+      pivot: {x: 0.42908743, y: 0.02787165}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Torso
+      rect:
+        serializedVersion: 2
+        x: 124
+        y: 621
+        width: 29
+        height: 38
+      alignment: 9
+      pivot: {x: 0.4718791, y: 0.027872186}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: UpperArmL
+      rect:
+        serializedVersion: 2
+        x: 107
+        y: 614
+        width: 14
+        height: 31
+      alignment: 9
+      pivot: {x: 0.5142457, y: 0.97235304}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: UnderArmL
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 586
+        width: 8
+        height: 19
+      alignment: 9
+      pivot: {x: 0.4916258, y: 0.97857344}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: HandL
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 569
+        width: 14
+        height: 13
+      alignment: 9
+      pivot: {x: 0.60528076, y: 0.891672}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: FistL
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 553
+        width: 13
+        height: 12
+      alignment: 9
+      pivot: {x: 0.5773028, y: 0.90197754}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: FootL
+      rect:
+        serializedVersion: 2
+        x: 119
+        y: 540
+        width: 19
+        height: 9
+      alignment: 9
+      pivot: {x: 0.32290167, y: 0.9404568}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: FootR
+      rect:
+        serializedVersion: 2
+        x: 141
+        y: 540
+        width: 19
+        height: 9
+      alignment: 9
+      pivot: {x: 0.31804937, y: 0.9609443}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: UnderLegL
+      rect:
+        serializedVersion: 2
+        x: 118
+        y: 551
+        width: 14
+        height: 22
+      alignment: 9
+      pivot: {x: 0.6136976, y: 0.9832708}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: UnderLegR
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 551
+        width: 14
+        height: 22
+      alignment: 9
+      pivot: {x: 0.6148496, y: 0.97811055}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: UpperLegL
+      rect:
+        serializedVersion: 2
+        x: 122
+        y: 575
+        width: 14
+        height: 24
+      alignment: 9
+      pivot: {x: 0.52731866, y: 0.96165466}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: UpperLegR
+      rect:
+        serializedVersion: 2
+        x: 142
+        y: 575
+        width: 14
+        height: 24
+      alignment: 9
+      pivot: {x: 0.4712873, y: 0.96059924}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: FistR
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 553
+        width: 13
+        height: 12
+      alignment: 9
+      pivot: {x: 0.41844764, y: 0.8917999}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: HandR
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 569
+        width: 14
+        height: 13
+      alignment: 9
+      pivot: {x: 0.3913498, y: 0.89357346}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: UnderArmR
+      rect:
+        serializedVersion: 2
+        x: 161
+        y: 586
+        width: 8
+        height: 19
+      alignment: 9
+      pivot: {x: 0.48590088, y: 0.96961737}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: UpperArmR
+      rect:
+        serializedVersion: 2
+        x: 156
+        y: 614
+        width: 14
+        height: 31
+      alignment: 9
+      pivot: {x: 0.5000022, y: 0.97509176}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Pelvis
+      rect:
+        serializedVersion: 2
+        x: 123
+        y: 605
+        width: 27
+        height: 12
+      alignment: 9
+      pivot: {x: 0.53020334, y: 0.8397929}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    outline: []
+    physicsShape: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
