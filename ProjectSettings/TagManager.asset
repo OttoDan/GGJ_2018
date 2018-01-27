@@ -39,6 +39,9 @@ TagManager:
   - 
   - 
   m_SortingLayers:
+  - name: BackSceneryGround1
+    uniqueID: 3656974191
+    locked: 0
   - name: Background2
     uniqueID: 4267145959
     locked: 0

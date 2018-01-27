@@ -11,6 +11,8 @@ public class CharacterMovementAnimation : MonoBehaviour {
     public bool jump = false;
     public Transform groundCheck;
     public bool facingRight = true;
+    public float distanceY;
+    public float oldY;
     //animation
     Animator anim;
     int jumpHash = Animator.StringToHash("jump");
@@ -20,15 +22,27 @@ public class CharacterMovementAnimation : MonoBehaviour {
     {
         rb = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
+        oldY = transform.position.y;
     }
     private void Update()
     {
         
+
+        if (transform.position.y != oldY)
+        {
+            distanceY = Mathf.Abs(oldY - transform.position.y);
+            oldY = transform.position.y;
+        }
+
+        anim.SetFloat("movementY", distanceY*2f);
+
+        Debug.Log("distY:" +distanceY);
+
         isGrounded = Physics2D.Linecast(transform.position, groundCheck.position, 1 << LayerMask.NameToLayer("Ground"));
 
         if (Input.GetButtonDown("Jump") && isGrounded)
         {
-            anim.SetTrigger(jumpHash);
+            //anim.SetTrigger(jumpHash);
             jump = true;
             isGrounded = false;
         }
@@ -77,7 +91,6 @@ public class CharacterMovementAnimation : MonoBehaviour {
     {
         if (collision.gameObject.tag == "Ground")
         {
-            
             isGrounded = true;
         }
     }
