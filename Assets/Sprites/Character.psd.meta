@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: 7c3869f0bcabb9d47a92624b03b23aec
-timeCreated: 1517085445
+timeCreated: 1517086582
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
@@ -644,10 +644,10 @@ TextureImporter:
       name: RatUpperHand
       rect:
         serializedVersion: 2
-        x: 783
+        x: 782
         y: 605
-        width: 9
-        height: 8
+        width: 11
+        height: 9
       alignment: 9
       pivot: {x: 0.6334975, y: 0.7503052}
       border: {x: 0, y: 0, z: 0, w: 0}
