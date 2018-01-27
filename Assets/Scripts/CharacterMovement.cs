@@ -15,7 +15,7 @@ public class CharacterMovement : MonoBehaviour {
 	void Update () {
         // if (isGrounded)//(rb.velocity.y < 0.5f && rb.velocity.y > -0.5f) { 
         //  { 
-        rb.velocity += Input.GetAxisRaw("Horizontal") * Vector2.right * movementSpeed * Time.deltaTime + Vector2.up * 0.05f;
+        rb.velocity += Input.GetAxisRaw("Horizontal") * Vector2.right * movementSpeed * Time.deltaTime + Vector2.up * 0.1f;
         
             if (Input.GetButtonDown("Jump"))
             {
