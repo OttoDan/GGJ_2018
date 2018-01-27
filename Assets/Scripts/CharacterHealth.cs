@@ -34,7 +34,7 @@ public class CharacterHealth : MonoBehaviour
                 child.gameObject.AddComponent<Rigidbody2D>();
                 child.gameObject.GetComponent<Rigidbody2D>().velocity += Vector2.up *  Random.Range(2f, 12f);
                 child.gameObject.GetComponent<Rigidbody2D>().velocity += Vector2.right * Random.Range(-12f,12f);
-                Destroy(GetComponent<CharacterMovement>());
+                Destroy(GetComponent<CharacterMovementAnimation>());
                 child.parent = null;
             }
             
