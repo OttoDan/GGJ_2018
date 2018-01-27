@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class CharacterAnimation : MonoBehaviour {
     Animator anim;
+    int jumpHash = Animator.StringToHash("jump");
 	// Use this for initialization
 	void Start () {
         anim = GetComponent<Animator>();
@@ -13,5 +14,9 @@ public class CharacterAnimation : MonoBehaviour {
 	void Update () {
         float move = Input.GetAxis("Horizontal");
         anim.SetFloat("speed", move*1.0f);
+        if (Input.GetButtonDown("Jump"))
+        {
+            anim.SetTrigger(jumpHash);
+        }
 	}
 }
