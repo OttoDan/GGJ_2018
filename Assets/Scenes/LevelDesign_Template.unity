@@ -188,6 +188,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   destination: {fileID: 838024716}
+  climb: 0
 --- !u!1 &39765116
 GameObject:
   m_ObjectHideFlags: 0
@@ -2004,11 +2005,11 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4216063845249652, guid: 65344bff67adf52488c864787112f315, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 195.68
+      value: 177.4
       objectReference: {fileID: 0}
     - target: {fileID: 4216063845249652, guid: 65344bff67adf52488c864787112f315, type: 2}
       propertyPath: m_LocalPosition.y
-      value: -2.89
+      value: -2.4
       objectReference: {fileID: 0}
     - target: {fileID: 4216063845249652, guid: 65344bff67adf52488c864787112f315, type: 2}
       propertyPath: m_LocalPosition.z
@@ -2410,6 +2411,17 @@ Prefab:
       propertyPath: m_LocalPosition.y
       value: 0.32
       objectReference: {fileID: 0}
+    - target: {fileID: 114968437220940884, guid: 65344bff67adf52488c864787112f315,
+        type: 2}
+      propertyPath: safeSpot
+      value: 
+      objectReference: {fileID: 1901140446}
+    - target: {fileID: 114968437220940884, guid: 65344bff67adf52488c864787112f315,
+        type: 2}
+      propertyPath: characterPrefab
+      value: 
+      objectReference: {fileID: 1874265800562756, guid: 65344bff67adf52488c864787112f315,
+        type: 2}
     m_RemovedComponents:
     - {fileID: 114694120489373172, guid: 65344bff67adf52488c864787112f315, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: 65344bff67adf52488c864787112f315, type: 2}

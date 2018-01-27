@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class ClimbTrigger : MonoBehaviour {
     public Transform destination;
+    public bool climb;
     
     private void OnTriggerStay2D(Collider2D collision)
     {
@@ -11,9 +12,16 @@ public class ClimbTrigger : MonoBehaviour {
         {
             if (Input.GetKey(KeyCode.E))
             {
+
                 //collision.transform.position = destination.position;
-                collision.GetComponent<Animator>().SetFloat("climb", 10f);
+                collision.GetComponent<Animator>().SetBool("climb", climb);
+                climb = true;
+                collision.GetComponent<Animator>().Play ("Billy Bob Climb",-1,0f  );
+
             }
+            
         }
+        
     }
+    
 }
