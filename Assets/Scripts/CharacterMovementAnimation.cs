@@ -11,8 +11,12 @@ public class CharacterMovementAnimation : MonoBehaviour {
     public bool jump = false;
     public Transform groundCheck;
     public bool facingRight = true;
+
     public float distanceY;
     public float oldY;
+
+    
+
     //animation
     Animator anim;
     int jumpHash = Animator.StringToHash("jump");
@@ -50,7 +54,7 @@ public class CharacterMovementAnimation : MonoBehaviour {
         {
             anim.ResetTrigger(jumpHash);
         }
-
+        
 
     }
     // Update is called once per frame
@@ -64,7 +68,7 @@ public class CharacterMovementAnimation : MonoBehaviour {
         float inputHorizontal = Input.GetAxis("Horizontal");
         if (inputHorizontal * rb.velocity.x < maxSpeed)
         {
-            rb.AddForce(Vector2.right * inputHorizontal * movementSpeed);
+            rb.AddForce(Vector2.right * inputHorizontal * movementSpeed );
             //if(Input.GetKeyDown(KeyCode.LeftShift))
         }
         if (Mathf.Abs(rb.velocity.x) > maxSpeed)
