@@ -1,10 +1,5 @@
 ﻿using UnityEngine;
 
-<<<<<<< HEAD
-public class CharacterMovement : MonoBehaviour
-{
-
-=======
 public class CharacterMovement : MonoBehaviour {
     private Rigidbody2D rb;
     public float movementSpeed = 0.1f;
@@ -28,7 +23,20 @@ public class CharacterMovement : MonoBehaviour {
             }
       //  }
 	}
->>>>>>> 690ad7eeb62955b564eda69ec65538e5e6bf3285
 
+    private void OnCollisionEnter(Collision collision)
+    {
+        if(collision.gameObject.tag == "Ground")
+        {
+            isGrounded = true;
+        }
+    }
 
+    private void OnCollisionExit(Collision collision)
+    {
+        if(collision.gameObject.tag == "Ground")
+        {
+            isGrounded = false;
+        }
+    }
 }
