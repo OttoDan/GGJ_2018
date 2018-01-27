@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class CharacterMovementAnimation : MonoBehaviour {
+public class playerMoveFinish : MonoBehaviour {
     private Rigidbody2D rb;
     public float movementSpeed = 0.1f;
     public float jumpForce = 8f;
@@ -11,8 +11,7 @@ public class CharacterMovementAnimation : MonoBehaviour {
     public bool jump = false;
     public Transform groundCheck;
     public bool facingRight = true;
-    public float distanceY;
-    public float oldY;
+    
     //animation
     Animator anim;
     int jumpHash = Animator.StringToHash("jump");
@@ -22,27 +21,15 @@ public class CharacterMovementAnimation : MonoBehaviour {
     {
         rb = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
-        oldY = transform.position.y;
     }
     private void Update()
     {
         
-
-        if (transform.position.y != oldY)
-        {
-            distanceY = Mathf.Abs(oldY - transform.position.y);
-            oldY = transform.position.y;
-        }
-
-        anim.SetFloat("movementY", distanceY*2f);
-
-        Debug.Log("distY:" +distanceY);
-
         isGrounded = Physics2D.Linecast(transform.position, groundCheck.position, 1 << LayerMask.NameToLayer("Ground"));
 
         if (Input.GetButtonDown("Jump") && isGrounded)
         {
-            //anim.SetTrigger(jumpHash);
+            anim.SetTrigger(jumpHash);
             jump = true;
             isGrounded = false;
         }
@@ -50,7 +37,7 @@ public class CharacterMovementAnimation : MonoBehaviour {
         {
             anim.ResetTrigger(jumpHash);
         }
-
+        
 
     }
     // Update is called once per frame
@@ -64,7 +51,7 @@ public class CharacterMovementAnimation : MonoBehaviour {
         float inputHorizontal = Input.GetAxis("Horizontal");
         if (inputHorizontal * rb.velocity.x < maxSpeed)
         {
-            rb.AddForce(Vector2.right * inputHorizontal * movementSpeed);
+            rb.AddForce(Vector2.right * inputHorizontal * movementSpeed, ForceMode2D.Force );
             //if(Input.GetKeyDown(KeyCode.LeftShift))
         }
         if (Mathf.Abs(rb.velocity.x) > maxSpeed)
@@ -91,6 +78,7 @@ public class CharacterMovementAnimation : MonoBehaviour {
     {
         if (collision.gameObject.tag == "Ground")
         {
+            
             isGrounded = true;
         }
     }
