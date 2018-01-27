@@ -10,6 +10,6 @@ public class TrapDeadly : MonoBehaviour {
         {
             collision.GetComponent<CharacterHealth>().Kill();
         }
-            GetComponent<CircleCollider2D>().isTrigger = false;
+        GetComponent<Collider2D>().isTrigger = false;
     }
 }

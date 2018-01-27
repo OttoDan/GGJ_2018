@@ -2,16 +2,17 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class TrapTrigger : MonoBehaviour {
-    public GameObject Ball;
-
-    private void OnTriggerEnter2D(Collider other)
+public class TrapTrigger : MonoBehaviour
+{
+    public Rigidbody2D rb;
+    // Use this for initialization
+    void Start()
     {
-        Ball.SetActive(true);
+        rb.simulated = false;
     }
 
-    private void Awake()
+    private void OnTriggerEnter2D(Collider2D collision)
     {
-        Ball.SetActive(false);
+        rb.simulated = true;
     }
 }
