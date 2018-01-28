@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: 7c3869f0bcabb9d47a92624b03b23aec
-timeCreated: 1517086582
+timeCreated: 1517097243
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
@@ -24,8 +24,8 @@ TextureImporter:
     21300034: GreyGround1
     21300036: BlackGround1
     21300038: Tree1
-    21300040: Character_0
-    21300042: Character_1
+    21300040: TreeBrown
+    21300042: TreeGrey
     21300044: Rat Head
     21300046: Rat Neck
     21300048: Rat Torso
@@ -34,6 +34,21 @@ TextureImporter:
     21300054: RatUpperLeg
     21300056: RatFoot
     21300058: RatTail
+    21300060: DoorL
+    21300062: DoorR
+    21300064: Spikes
+    21300066: BigSpikes
+    21300068: Chest
+    21300070: Key
+    21300072: Chair
+    21300074: PipeVertical
+    21300076: PipeHorizontal
+    21300078: BrokenPipeA
+    21300080: Character_2
+    21300082: BrokenPipeB
+    21300084: PipeCorner
+    21300086: Lever
+    21300088: LeverStick
   externalObjects: {}
   serializedVersion: 4
   mipmaps:
@@ -530,10 +545,10 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Character_0
+      name: TreeBrown
       rect:
         serializedVersion: 2
-        x: 622
+        x: 621
         y: 0
         width: 216
         height: 358
@@ -568,7 +583,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Character_1
+      name: TreeGrey
       rect:
         serializedVersion: 2
         x: 813
@@ -613,62 +628,6 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Rat Neck
-      rect:
-        serializedVersion: 2
-        x: 771
-        y: 617
-        width: 12
-        height: 20
-      alignment: 9
-      pivot: {x: 0.32201132, y: 0.5210796}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: Rat Torso
-      rect:
-        serializedVersion: 2
-        x: 784
-        y: 615
-        width: 49
-        height: 28
-      alignment: 9
-      pivot: {x: 0.0967918, y: 0.47616142}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: RatUpperHand
-      rect:
-        serializedVersion: 2
-        x: 782
-        y: 605
-        width: 11
-        height: 9
-      alignment: 9
-      pivot: {x: 0.6334975, y: 0.7503052}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: RatHand
-      rect:
-        serializedVersion: 2
-        x: 770
-        y: 597
-        width: 12
-        height: 9
-      alignment: 9
-      pivot: {x: 0.93885803, y: 0.9626736}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
       name: RatUpperLeg
       rect:
         serializedVersion: 2
@@ -697,15 +656,211 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: RatTail
+      name: DoorL
       rect:
         serializedVersion: 2
-        x: 844
-        y: 622
-        width: 26
-        height: 46
-      alignment: 9
-      pivot: {x: 0.1527217, y: 0.054373037}
+        x: 512
+        y: 538
+        width: 92
+        height: 182
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DoorR
+      rect:
+        serializedVersion: 2
+        x: 608
+        y: 537
+        width: 97
+        height: 183
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Spikes
+      rect:
+        serializedVersion: 2
+        x: 454
+        y: 562
+        width: 27
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: BigSpikes
+      rect:
+        serializedVersion: 2
+        x: 454
+        y: 544
+        width: 54
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Chest
+      rect:
+        serializedVersion: 2
+        x: 353
+        y: 542
+        width: 88
+        height: 63
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Key
+      rect:
+        serializedVersion: 2
+        x: 386
+        y: 610
+        width: 16
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Chair
+      rect:
+        serializedVersion: 2
+        x: 737
+        y: 538
+        width: 61
+        height: 131
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PipeVertical
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 188
+        width: 43
+        height: 127
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PipeHorizontal
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 315
+        width: 195
+        height: 45
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: BrokenPipeA
+      rect:
+        serializedVersion: 2
+        x: 202
+        y: 311
+        width: 94
+        height: 44
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Character_2
+      rect:
+        serializedVersion: 2
+        x: 202
+        y: 311
+        width: 94
+        height: 44
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: BrokenPipeB
+      rect:
+        serializedVersion: 2
+        x: 296
+        y: 311
+        width: 108
+        height: 44
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PipeCorner
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 186
+        width: 121
+        height: 127
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Lever
+      rect:
+        serializedVersion: 2
+        x: 468
+        y: 583
+        width: 42
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: LeverStick
+      rect:
+        serializedVersion: 2
+        x: 484
+        y: 609
+        width: 11
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
